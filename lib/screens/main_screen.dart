@@ -12,13 +12,13 @@ class MainScreen extends StatelessWidget {
           children: [
             Row(
               children: [
-                _buildNavButton(
+                _buildNavButton_find_project(
                   '프로젝트 찾기',
                 ),
-                _buildNavButton('프로젝트 등록하기'),
-                _buildNavButton('개발자 등록'),
-                _buildNavButton('게시판'),
-                _buildNavButton('내 정보'),
+                _buildNavButton_project_register('프로젝트 등록하기'),
+                _buildNavButton_developer_register('개발자 등록'),
+                _builNavButton_board('게시판'),
+                _buildNavButton_info('내 정보'),
               ],
             ),
             Row(
@@ -37,7 +37,47 @@ class MainScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildNavButton(String text) {
+  Widget _buildNavButton_find_project(String text) {
+    return TextButton(
+      onPressed: () {},
+      child: Text(
+        text,
+        style: const TextStyle(color: Colors.black),
+      ),
+    );
+  }
+
+  Widget _buildNavButton_project_register(String text) {
+    return TextButton(
+      onPressed: () {},
+      child: Text(
+        text,
+        style: const TextStyle(color: Colors.black),
+      ),
+    );
+  }
+
+  Widget _buildNavButton_developer_register(String text) {
+    return TextButton(
+      onPressed: () {},
+      child: Text(
+        text,
+        style: const TextStyle(color: Colors.black),
+      ),
+    );
+  }
+
+  Widget _buildNavButton_info(String text) {
+    return TextButton(
+      onPressed: () {},
+      child: Text(
+        text,
+        style: const TextStyle(color: Colors.black),
+      ),
+    );
+  }
+
+  Widget _builNavButton_board(String text) {
     return TextButton(
       onPressed: () {},
       child: Text(
