@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:lovebug_frontend/widgets/main_appbar.dart';
 import '/screens/main_screen.dart';
+import '/screens/register_project_sreen.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  final bool login = true;
+  final bool login = false;
 
   const MyApp({super.key}); // 로그인 상태를 나타내는 변수
 
@@ -30,9 +32,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Login Page'),
-      ),
+      appBar: const MainAppBar(),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
